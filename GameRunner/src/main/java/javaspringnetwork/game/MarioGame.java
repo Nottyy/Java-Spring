@@ -1,5 +1,10 @@
 package javaspringnetwork.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("con")
 public class MarioGame implements GamingConsole{
     public void up(){
         System.out.println("Mario Up");
